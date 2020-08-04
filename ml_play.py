@@ -66,7 +66,7 @@ class MLPlay:
             print('top left')
             return 2
         else:
-            pass
+            return 0
 
         # """
         # result
