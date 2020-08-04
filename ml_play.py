@@ -81,8 +81,8 @@ class MLPlay:
     def predictFalling_x(self, previous_ball, current_ball):
         direction_x = current_ball[0] - previous_ball[0]
         direction_y = current_ball[1] - previous_ball[1]
-        m = direction_y / direction_x
-        c = current_ball[1] - m * current_ball[0]
+        ball_x_end = 0
+        # y = mx + c
         if direction_y > 0:
             m = direction_y / direction_x
             c = current_ball[1] - m*current_ball[0]
